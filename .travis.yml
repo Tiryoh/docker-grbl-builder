@@ -10,5 +10,5 @@ install:
 
 script:
   - docker build -t tiryoh/dev .
-  - cd grbl && docker run -it --rm -v "${PWM}":/source tiryoh/dev
+  - cd grbl && docker run -it --rm -v "${PWD}":/source tiryoh/dev
 
